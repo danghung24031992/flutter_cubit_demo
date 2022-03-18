@@ -47,15 +47,32 @@ dependencies:
   awesome_notifications: ^0.6.21
   google_sign_in: ^5.2.4
   device_preview: ^1.0.0
+  hydrated_bloc: ^8.1.0
+  fluro: ^2.0.3
+  flutter_svg: ^1.0.3
+  animated_size_and_fade: ^3.0.0
+
+  google_fonts: ^2.3.1
+
+  flutter_screenutil: ^5.3.1
+
+  flutter_icons: ^1.1.0
 
 dev_dependencies:
   flutter_lints: ^1.0.0
   flutter_test:
     sdk: flutter
-
+  flutter_native_splash: ^2.1.1
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter.
+
+flutter_native_splash:
+    color: "#EDBB99"
+    image: assets/images/welcome.png
+    android: true
+    ios: true
+
 flutter:
 
   # The following line ensures that the Material Icons font is

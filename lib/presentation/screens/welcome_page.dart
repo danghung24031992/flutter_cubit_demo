@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
 import '../../bloc/auth/authentication_cubit.dart';
 import '../../bloc/connectivity/connectivity_cubit.dart';
+import '../../navigation/routes.dart';
 import '../../presentation/widgets/mybutton.dart';
 import '../../presentation/widgets/myindicator.dart';
 import '../../presentation/widgets/mysnackbar.dart';
@@ -76,7 +77,7 @@ class WelcomePage extends StatelessWidget {
                       width: 80.w,
                       title: 'Login',
                       func: () {
-                        Navigator.pushNamed(context, loginpage);
+                        Navigator.pushNamed(context, Routes.login);
                       },
                     ),
                     SizedBox(
@@ -87,7 +88,7 @@ class WelcomePage extends StatelessWidget {
                       width: 80.w,
                       title: 'Sign Up',
                       func: () {
-                        Navigator.pushNamed(context, signuppage);
+                        Navigator.pushNamed(context, Routes.signup);
                       },
                     ),
                     SizedBox(

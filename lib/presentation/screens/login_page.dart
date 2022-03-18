@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
 import '../../bloc/auth/authentication_cubit.dart';
 import '../../bloc/connectivity/connectivity_cubit.dart';
+import '../../navigation/routes.dart';
 import '../../presentation/widgets/mybutton.dart';
 import '../../presentation/widgets/myindicator.dart';
 import '../../presentation/widgets/mysnackbar.dart';
@@ -176,7 +177,7 @@ class _LoginPageState extends State<LoginPage> {
                             ),
                             InkWell(
                               onTap: () {
-                                Navigator.pushNamed(context, signuppage);
+                                Navigator.pushNamed(context, Routes.signup);
                               },
                               child: Text(
                                 'Sign Up',
